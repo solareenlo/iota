@@ -6,7 +6,7 @@
 ## ざっくりした解説
 - https://scrapbox.io/iota/
 
-## フルノードエクスポローラー
+## フルノードエクスプローラー
 - https://github.com/solareenlo/iotanode_get_info_neighbors
 
 ## jsライブライを使ってみよう.
