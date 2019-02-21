@@ -9,5 +9,5 @@
 ## フルノードエクスプローラー
 - https://github.com/solareenlo/iotanode_get_info_neighbors
 
-## jsライブライを使ってみよう.
+## JSライブライをプライベートネットワークで使ってみよう.
 - https://github.com/solareenlo/iota-workshop
