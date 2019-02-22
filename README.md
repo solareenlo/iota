@@ -7,6 +7,7 @@
 - https://github.com/solareenlo/iota-wp-jp
 
 ## ざっくりとした日本語による解説やリンク集
+- https://github.com/syucream/techbookfest4/blob/5692760af30e4c3b442260eb18cae78ac5376604/syucream.re
 - https://scrapbox.io/iota/
 
 ## フルノードエクスプローラー
