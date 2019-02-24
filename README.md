@@ -18,3 +18,4 @@
 
 ## その他開発者が参考になるコミュニティによるリポジトリ
 - https://github.com/iota-community
+- https://github.com/l3wi/iota-seed-cmd
