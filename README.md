@@ -1,4 +1,5 @@
 # iota
+IOTAについて学んでみよう!
 
 ## とりあえずここ
 - https://docs.iota.org
@@ -10,11 +11,11 @@
 - https://github.com/syucream/techbookfest4/blob/5692760af30e4c3b442260eb18cae78ac5376604/syucream.re
 - https://scrapbox.io/iota/
 
-## フルノードエクスプローラー
-- https://github.com/solareenlo/iotanode_get_info_neighbors
-
 ## JSライブライをプライベートネットワークで使ってみよう.
 - https://github.com/solareenlo/iota-workshop
+
+## フルノードエクスプローラー
+- https://github.com/solareenlo/iotanode_get_info_neighbors
 
 ## その他開発者が参考になるコミュニティによるリポジトリ
 - https://github.com/iota-community
