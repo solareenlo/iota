@@ -19,7 +19,7 @@
 | date_of_introduction_source = [[Initial coin offering]]
 | using_countries             = {{World}}
 | issuing_authority_title     = IOTA Foundation|issuing_authority_website=iota.org
-| inflation_rate              = 2,779,530,283,277,761 Iota
+| inflation_rate              = 2,779,530,283,277,761 IOTA
 | inflation_title             = 総発行量
 | printer                     =
 | printer_website             = {{URL|https://www.iota.org}}
@@ -50,7 +50,7 @@ IOTAの起源は、2014年に4人が、[[モノのインターネット|IoT]]及
 
 4人は、このような経験を重ねて、IoTの基幹として必要な決済レイヤーを実現するために、2015年前半にIOTAの開発を始めた<ref name="Primer"/>。
 公正な割り当てを確保するために、2015年11月から12月まで行われたクラウドセールでは、IOTAトークンの総供給数量が100％売り出されて、IOTA開発者や設立者たちには1枚のIOTAも割り当てられなかった。
-ビットコイン1337枚相当の金額を（BTCやNXTやJinnトークンという形で）調達した<ref name="IOTA History">{{cite web| url=https://medium.com/konfid-io-blockchain-reports/iota-report-decoding-the-tangle-part-2-the-known-and-unknown-history-of-the-iota-project-3db9f5f3cfa3 |title=The Known and Unknown History of the IOTA Project |year=2018 |last=Konfidio |language=en |accessdate=2019-03-29 |rel=harv}}</ref>。
+[[ビットコイン]]1337枚相当の金額を（BTCやNXTやJinnトークンという形で）調達した<ref name="IOTA History">{{cite web| url=https://medium.com/konfid-io-blockchain-reports/iota-report-decoding-the-tangle-part-2-the-known-and-unknown-history-of-the-iota-project-3db9f5f3cfa3 |title=The Known and Unknown History of the IOTA Project |year=2018 |last=Konfidio |language=en |accessdate=2019-03-29 |rel=harv}}</ref>。
 開発者や設立者たちへ配当されたIOTAが1枚もなかったことから、IOTAコミュニティーは非営利の'''IOTA財団'''を設立してドイツで登録するために、相当量のIOTAを寄附してIOTAプロジェクトのビジョンを支援することを決定した。
 その後もIOTAコミュニティーは、大企業との協業やコミュニティー・プロジェクトや開発者の獲得のために資金を提供した<ref name="The Big Deal">{{cite web |url=https://forum.helloiota.com/17451/Archive-IOTA-Big-Deal |title=Archive: IOTA Big Deal |language=en |accessdate=2019-03-29 |rel=harv}}</ref><ref name="Ecosystem Fund">{{cite web |url=https://cryptoinsider.com/iot-operator-iota-launch-new-2-million-ecosystem-fund/ |title=IoT Operator IOTA Launch New $2 Million Ecosystem Fund |year=2017 |last=O’Higgins |first=Conor |language=en |accessdate=2019-03-29 |rel=harv}}</ref>。
 
@@ -96,6 +96,22 @@ IOTAのプルーフ・オブ・ワークの難易度は高くなく、ノート�
 あるいはプルーフ・オブ・ワークを効率的に実行できるように特化された外部のデバイスやサービスにアウトソースすることもできる<ref name="Powsrv">{{cite web |url=https://powsrv.io  |year=2019 |title=Fast and efficient PoWaaS (PoW-as-a-service) for your IOTA wallet, MAM-stream or any IOTA usecase requiring fast transaction turnout. |website=powsrv.io |language=en |access-date=2019-04-01}}</ref>。
 このようにIOTAのプルーフ・オブ・ワークのシステム要件は、マイナーと承認者が別々の暗号通貨で使われているプルーフ・オブ・ワークと異なって、極小のマイクロコントローラーに適したものとなっている。
 トランザクションと検証作業を同じ工程に配置することで、IOTAは承認作業が中央集権化するリスクを排除できるだけでなく、承認者に対してトークンの生成やトランザクション手数料などのインセンティブを与える必要性も排除できる。
+
+=== 供給数量 ===
+IOTAの総供給数量は2,779,530,283,277,761枚である。
+この数量は三進法の計算に最適化されたもので、[[国際単位系]]としては{{gaps|2.779|e=15}}として表わされる。
+IOTAの総供給数量は、33桁の三進法の数である111,111,111,111,111,111,111,111,111,111,111に基づいていて、十進法の3<sup>33</sup>に相当するものである。
+3<sup>33</sup>は、IOTAのプラスとマイナスの数値の全領域である。
+3<sup>33</sup>は奇数なので、IOTAの最大の絶対値は(3<sup>33</sup>-1)/2 = 2,779,530,283,277,761となる。
+これが一つのアドレスで所有できるプラスの最大値であり、その結果としてIOTAの総供給数量となっている。
+
+IOTAの総供給数量は約{{gaps|2.8|e=15}} IOTAであるのに対して、ビットコインの総供給数量は最小単位であるsatoshiで数えると{{gaps|2.1|e=15}} satoshiなので、似通っているが、ビットコインと異なり、IOTAは小数や分数を使わずに、整数の値のみを処理する。
+IOTAを整数単位で取扱うことの利点は、小数の四捨五入問題を回避できることである。
+小数の四捨五入問題は、ソフトウェアが適切に設計されていないと、浮動小数点演算の誤差を引き起こす可能性がある。
+IOTAは、分割できないトークンを使っているが、総供給数量が多く、トランザクションの処理手数料もかからないので、特に[[マイクロペイメント]]に適している。
+
+発行されている全てのIOTAは、ジェネシス・トランザクション（一番最初のトランザクション）で生成された。
+これはタングルのセキュリティを低下させないトークンの発行メカニズムが明らかでなく、セキュリティ面で安全なメカニズムがまだ確証されていないかったからである。
 
 == 出典 ==
 {{脚注ヘルプ}}
