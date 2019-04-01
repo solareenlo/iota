@@ -98,14 +98,14 @@ IOTAのプルーフ・オブ・ワークの難易度は高くなく、ノート�
 トランザクションと検証作業を同じ工程に配置することで、IOTAは承認作業が中央集権化するリスクを排除できるだけでなく、承認者に対してトークンの生成やトランザクション手数料などのインセンティブを与える必要性も排除できる。
 
 === 供給数量 ===
-IOTAの総供給数量は2,779,530,283,277,761枚である。
-この数量は三進法の計算に最適化されたもので、[[国際単位系]]としては{{gaps|2.779|e=15}}として表わされる。
-IOTAの総供給数量は、33桁の三進法の数である111,111,111,111,111,111,111,111,111,111,111に基づいていて、十進法の3<sup>33</sup>に相当するものである。
-3<sup>33</sup>は、IOTAのプラスとマイナスの数値の全領域である。
-3<sup>33</sup>は奇数なので、IOTAの最大の絶対値は(3<sup>33</sup>-1)/2 = 2,779,530,283,277,761となる。
+IOTAの総供給数量は<math>2,779,530,283,277,761</math>枚である。
+この数量は三進法の計算に最適化されたもので、[[国際単位系]]としては<math>2.779\times10^{15}</math>として表わされる。
+IOTAの総供給数量は、<math>33</math>桁の三進法の数である<math>111,111,111,111,111,111,111,111,111,111,111</math>に基づいていて、十進法の<math>3^{33}</math>に相当するものである。
+<math>3^{33}</math>は、IOTAのプラスとマイナスの数値の全領域である。
+<math>3^{33}</math>は奇数なので、IOTAの最大の絶対値は<math>(3^{33}-1)/2 = 2,779,530,283,277,761</math>となる。
 これが一つのアドレスで所有できるプラスの最大値であり、その結果としてIOTAの総供給数量となっている。
 
-IOTAの総供給数量は約{{gaps|2.8|e=15}} IOTAであるのに対して、ビットコインの総供給数量は最小単位であるsatoshiで数えると{{gaps|2.1|e=15}} satoshiなので、似通っているが、ビットコインと異なり、IOTAは小数や分数を使わずに、整数の値のみを処理する。
+IOTAの総供給数量は約<math>2.8\times10^{15}</math> IOTAであるのに対して、ビットコインの総供給数量は最小単位であるsatoshiで数えると<math>2.1\times10^{15}</math> satoshiなので、似通っているが、ビットコインと異なり、IOTAは小数や分数を使わずに、整数の値のみを処理する。
 IOTAを整数単位で取扱うことの利点は、小数の四捨五入問題を回避できることである。
 小数の四捨五入問題は、ソフトウェアが適切に設計されていないと、浮動小数点演算の誤差を引き起こす可能性がある。
 IOTAは、分割できないトークンを使っているが、総供給数量が多く、トランザクションの処理手数料もかからないので、特に[[マイクロペイメント]]に適している。
@@ -114,27 +114,38 @@ IOTAは、分割できないトークンを使っているが、総供給数量�
 これはタングルのセキュリティを低下させないトークンの発行メカニズムが明らかでなく、セキュリティ面で安全なメカニズムがまだ確証されていないかったからである。
 
 === 単位===
-
 IOTAの最小単位は、'''IOTA'''である。IOTAはトークン枚数が多いので、桁数に応じて　以下のような表記方によって表示される。
-
 {| class="wikitable"
 |-
 ! 単位 !! トークン枚数
 |-
-| IOTA (i) || 10<sup>0</sup> = 1
+| IOTA (i) || <math>10^0 = 1</math>
 |-
-| KiloIOTA (Ki) || 10<sup>3</sup> = 1,000
+| KiloIOTA (Ki) || <math>10^3 = 1,000</math>
 |-
-| MegaIOTA (Mi) || 10<sup>6</sup> = 1,000,000
+| MegaIOTA (Mi) || <math>10^6 = 1,000,000</math>
 |-
-| GigaIOTA (Gi) || 10<sup>9</sup> = 1,000,000,000
+| GigaIOTA (Gi) || <math>10^9 = 1,000,000,000</math>
 |-
-| TeraIOTA (Ti) || 10<sup>12</sup> = 1,000,000,000,000
+| TeraIOTA (Ti) || <math>10^{12} = 1,000,000,000,000</math>
 |-
-| PetaIOTA (Pi) || 10<sup>15</sup> = 1,000,000,000,000,000
+| PetaIOTA (Pi) || <math>10^{15} = 1,000,000,000,000,000</math>
 |}
+これは1Mega USドルを用いて<math>100</math>万USドルを表すのと同じことである。
 
-これは1Mega USドルを用いて１００万USドルを表すのと同じことである。
+===[[暗号理論]]===
+IOTAは、[[楕円曲線暗号]]ではなくウィンテルニッツハッシュベース暗号を用いている<ref name="On the Security of the Winternitz One-Time Signature Scheme">{{cite web |url=https://eprint.iacr.org/2011/191.pdf |title=On the Security of the Winternitz One-Time Signature Scheme |year=2011 |last1=Buchmann |first1=Johannes |last2=Dahmen |first2=Erik |last3=Ereth |first3=Sarah |last4= et. al. |access-date=2019-04-02}}</ref><ref name="Hash Ladders for Shorter Lamport Signatures">{{cite web |url=https://gist.github.com/karlgluck/8412807 |title=Hash Ladders for Shorter Lamport Signatures |year=2014 |last=Gluck |first=Karl |access-date=2019-04-02}}</ref><ref name="Merkle-Winternitz-HORS signature scheme for Tahoe-LAFS">{{cite web |url=https://tahoe-lafs.org/pipermail/tahoe-dev/2010-July/004587.html |title=Merkle-Winternitz-HORS signature scheme for Tahoe-LAFS |year=2010 |last=Hopwood |first=David-Sarah |access-date=2019-04-02}}</ref>。
+{{仮リンク|ハッシュベース署名|en|Hash-based cryptography}}は楕円曲線暗号よりはるかに速度が速いだけでなく<ref name="Efficient Hash-Based Signatures on Embedded Devices">{{cite web   |url=https://www-old.cdc.informatik.tu-darmstadt.de/reports/reports/papers/Finished/52_SECSI.pdf |title=Efficient Hash-Based Signatures on Embedded Devices |last1=Rohde |first1=Sebastian |last2=Eisenbarth |first2=Thomas |last3=Dahmen |first3=Erik |last4= et. al. |access-date=2019-04-02}}</ref>、署名と検証作業がかなり簡略化されており、タングルプロトコルの全体的な複雑性が軽減されている。
+
+[[量子コンピュータ]]は、[[グローバーのアルゴリズム]]を活用すると、総当たり攻撃を非常に効率よく実行できるとされている。
+ビットコインのブロックを生成するために、暗号学的な[[ノンス|ナンス]]を見つけ出すプロセスは、そのような総当たり攻撃に対して特に脆弱となる。
+従来型のコンピュータが解決するためには<math>\Theta(N)</math>回の演算処理を必要とする問題を、量子コンピュータでは<math>\Theta(\sqrt{N})</math>回の演算処理だけで済む。
+そのために、量子コンピュータなら、従来型コンピュータより約何百億倍も効率的にビットコインのマイニングができる可能性がある。
+このようにビットコイン（や他のブロックチェーンプロトコル）には量子コンピュータに対する脆弱性があることが分かっている。
+
+しかしIOTAでは、トランザクションのハッシュ値を見つけ出すためにチェックすべきナンスの数は<math>3^8</math>だけである<ref name="Tangle"/>。
+そのため、IOTAの設定では、量子コンピュータによって向上する効率性は<math>3^4=81</math>倍となるが、これは上述したビットコインの脆弱性に比べたら、取るに足らないほどのものである。
+元々、IOTAは設計的に、ナンスを見つけ出すのに掛かる時間が、一つのトランザクションを発行するのに必要な他の諸々の作業に要する時間と比べてもあまり長くないので、そもそもIOTAのセキュリティーと機能性は、量子計算ができる環境の中でも脅かされることはないのである。
 
 == 出典 ==
 {{脚注ヘルプ}}
