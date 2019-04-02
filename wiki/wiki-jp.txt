@@ -15,7 +15,7 @@
 | superunit_name_3            = GigaIota (Gi)
 | superunit_name_4            = TeraIota (Ti)
 | superunit_name_5            = PetaIota (Pi)
-| date_of_introduction        = {{Start date|df=yes|2016|6|11}}
+| date_of_introduction        = {{Start date|df=yes|2016|6|11}}<ref name="First Chapter"/>
 | date_of_introduction_source = [[Initial coin offering]]
 | using_countries             = {{World}}
 | issuing_authority_title     = IOTA Foundation|issuing_authority_website=iota.org
@@ -65,7 +65,7 @@ IOTAは[[ブロックチェーン]]を用いる代わりに、プロトコルと
 タングルは'''ブロック'''も'''チェーン'''もない構造となっているので、予めブロック時間を決めておく必要がなく、ネットワーク上のトランザクション数が増えると、最終的にトランザクションのスピードが速くなる。
 しかし、トランザクションが確定されるまでの時間には、タングルの[[トポロジー]]やネットワーク内のノードの位置など様々な要因も影響する。
 タングルはIOTAのトランザクションを保管する公開台帳であると同時に、非中央集権化されていて中央で管理する者は存在せず、[[メッシュネットワーク]]のトポロジーに従って組織化されるノード間のネットワークによって維持されている。
-タングルは[[分散データベース]]として機能する。現在はネットワーク上の各ノードにはタングルの全履歴が格納されている。
+タングルは[[分散データベース]]として機能する。2019年4月現在はネットワーク上の各ノードにはタングルの全履歴が格納されている。
 IOTAのトランザクションを送るためには、送り手はタングル上の他の二つのトランザクションを承認しなくてはならない<ref name="Primer"/>。
 タングルのユニークな承認作業の並列化を可能としているのは、タングルが非同期型システムだからである。これは承認作業が逐次的に順番に行われる同期型のブロックチェーンとは対照的である。
 IOTAネットワークを使用するための支払いは、（マイニング手数料を支払うのではなく）他の二つのトランザクションの承認という形で行われる。
@@ -77,8 +77,8 @@ IOTAネットワークを使用するための支払いは、（マイニング�
 [[File:Iota-tangle-1.png|thumb |'''IOTA Tangle'''
 この図の各正方形は送られてきたトランザクションを表す。
 新しいトランザクション毎に、タングルの中でランダムに選択された２つの未確定のトランザクションが承認される。
-あるトランザクションに対する承認数（n）が一つ増えるごとに、そのトランザクションが正当なものである可能性が増えていき、閾値の（c）まで高まる。
-この図ではピンクの正方形は"n＞0"（承認数が１以上）であるが、"n＜c"である（確定の閾値である"c"より小さい）ことを示している。
+あるトランザクションに対する承認数<math>n</math>が一つ増えるごとに、そのトランザクションが正当なものである可能性が増えていき、閾値の<math>c</math>まで高まる。
+この図ではピンクの正方形は<math>n>0</math>（承認数が１以上）であるが、<math>n<c</math>である（確定の閾値である<math>c</math>より小さい）ことを示している。
 ]]
 各トランザクションの送り手は、タングル中の他の二つのトランザクションを承認する必要があるので、送られてくるトランザクションが多ければ多いほど、確定されるトランザクションの数が増える<ref name="Tangle"/>。
 これはIOTAの[[スループット]]が、ネットワーク上のトランザクションの数に比例して拡大していくことを意味する<ref>{{Cite web |url=https://blog.iota.org/on-the-tangle-white-papers-proofs-airplanes-and-local-modifiers-44683aff8fea |title=On the Tangle, White Papers, Proofs, Airplanes, and Local Modifiers |year=2017 |language=en |last=Popov |first=Serguei |access-date=2019-03-30}}</ref>。
@@ -134,7 +134,7 @@ IOTAの最小単位は、'''IOTA'''である。IOTAはトークン枚数が多�
 これは1Mega USドルを用いて<math>100</math>万USドルを表すのと同じことである。
 
 ===[[暗号理論]]===
-IOTAは、[[楕円曲線暗号]]ではなくウィンテルニッツハッシュベース暗号を用いている<ref name="On the Security of the Winternitz One-Time Signature Scheme">{{cite web |url=https://eprint.iacr.org/2011/191.pdf |title=On the Security of the Winternitz One-Time Signature Scheme |year=2011 |last1=Buchmann |first1=Johannes |last2=Dahmen |first2=Erik |last3=Ereth |first3=Sarah |last4= et. al. |access-date=2019-04-02}}</ref><ref name="Hash Ladders for Shorter Lamport Signatures">{{cite web |url=https://gist.github.com/karlgluck/8412807 |title=Hash Ladders for Shorter Lamport Signatures |year=2014 |last=Gluck |first=Karl |access-date=2019-04-02}}</ref><ref name="Merkle-Winternitz-HORS signature scheme for Tahoe-LAFS">{{cite web |url=https://tahoe-lafs.org/pipermail/tahoe-dev/2010-July/004587.html |title=Merkle-Winternitz-HORS signature scheme for Tahoe-LAFS |year=2010 |last=Hopwood |first=David-Sarah |access-date=2019-04-02}}</ref>。
+IOTAは、[[楕円曲線暗号]]ではなくヴィンテルニッツハッシュベース暗号を用いている<ref name="On the Security of the Winternitz One-Time Signature Scheme">{{cite web |url=https://eprint.iacr.org/2011/191.pdf |title=On the Security of the Winternitz One-Time Signature Scheme |year=2011 |last1=Buchmann |first1=Johannes |last2=Dahmen |first2=Erik |last3=Ereth |first3=Sarah |last4= et. al. |access-date=2019-04-02}}</ref><ref name="Hash Ladders for Shorter Lamport Signatures">{{cite web |url=https://gist.github.com/karlgluck/8412807 |title=Hash Ladders for Shorter Lamport Signatures |year=2014 |last=Gluck |first=Karl |access-date=2019-04-02}}</ref><ref name="Merkle-Winternitz-HORS signature scheme for Tahoe-LAFS">{{cite web |url=https://tahoe-lafs.org/pipermail/tahoe-dev/2010-July/004587.html |title=Merkle-Winternitz-HORS signature scheme for Tahoe-LAFS |year=2010 |last=Hopwood |first=David-Sarah |access-date=2019-04-02}}</ref>。
 {{仮リンク|ハッシュベース署名|en|Hash-based cryptography}}は楕円曲線暗号よりはるかに速度が速いだけでなく<ref name="Efficient Hash-Based Signatures on Embedded Devices">{{cite web   |url=https://www-old.cdc.informatik.tu-darmstadt.de/reports/reports/papers/Finished/52_SECSI.pdf |title=Efficient Hash-Based Signatures on Embedded Devices |last1=Rohde |first1=Sebastian |last2=Eisenbarth |first2=Thomas |last3=Dahmen |first3=Erik |last4= et. al. |access-date=2019-04-02}}</ref>、署名と検証作業がかなり簡略化されており、タングルプロトコルの全体的な複雑性が軽減されている。
 
 [[量子コンピュータ]]は、[[グローバーのアルゴリズム]]を活用すると、総当たり攻撃を非常に効率よく実行できるとされている。
