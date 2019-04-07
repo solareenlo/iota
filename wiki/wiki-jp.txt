@@ -1,4 +1,4 @@
-{{Infobox currency
+'''IOTA'''（アイオータ）は、[https://www.iota.org/the-foundation/the-iota-foundation IOTA財団]を主導に[[オープンソース]][[プロトコル]]に基づいて開発が行われている[[Peer to Peer|P2P]]型決済及びデータ共有網、[[暗号通貨]]である。[[ビットコイン]]など他の[[ブロックチェーン]]型暗号通貨とは違い、'''タングル'''（英: Tangle）と呼ばれる[[有向非巡回グラフ]]（英: Directed acyclic graph, '''DAG'''）を利用<ref>{{Cite web|url=https://assets.ctfassets.net/r1dr6vzfxhev/2t4uxvsIqk0EUau6g2sw0g/45eae33637ca92f85dd9f4a3a218e1ec/iota1_4_3.pdf|title=IOTA Whitepaper  1.4.3|accessdate=2019 4/4|publisher=}}</ref>して非許可型分散型台帳を実装している<ref>{{Cite web|title=What is IOTA?|url=https://www.iota.org/get-started/what-is-iota|website=www.iota.org|accessdate=2019-04-04|language=en}}</ref>。タングル上で行われる価値交換は暗号通貨である'''IOTAトークン'''を介して行われ、決済記録を含むタングル上でのあらゆるデータの読み書きに使われる形式及びタングルの仕組みそのものを一括りにして'''IOTAプロトコル'''と呼ぶこともある。{{Infobox currency
 | currency_name               = IOTA
 | image_1                     = [[File:iota_logo.png |frameless |Latest foundation logo]]
 | image_title_1               = Prevailing IOTA logo
@@ -27,13 +27,10 @@
 | mint_website                =
 | footnotes                   = {{notelist |group=infobox}}
 }}
-'''IOTA'''（アイオータ）とは、[[オープンソース]]で[[ノード (ネットワーク)|ノード]]参加に許可を必要としない分散台帳のことである<ref name="IOTA">{{cite web |url=https://www.iota.org/get-started/what-is-iota |title=What is IOTA? |language=en |accessdate=2019-03-29}}</ref>。
-IOTAの[[プロトコル]]は、'''タングル'''(Tangle)と呼ばれるDAG（[[有向非循環グラフ]])である<ref name="Tangle">{{cite web |url=https://iota.org/IOTA_Whitepaper.pdf |title=The Tangle Whitepaper |year=2018 |last=Popov |first=Serguei |language=en |accessdate=2018-05-22}}</ref>。
-
 2016年7月11日にIOTAのオープンベータテストが開始された<ref name="First Chapter">{{cite web |url=https://blog.iota.org/iota-first-chapter-synopsis-506fdf874437 |title=IOTA First Chapter Synopsis |year=2016 |last=Sønstebø |first=David |language=en |accessdate=2018-05-22}}</ref>。
 
-IOTAのシステムは[[P2P]]型のネットワークにより運用され、[[トランザクション]]は仲介者なしにユーザ間で直接行われる。
-ユーザーがトランザクションを送信するには、ネットワーク上の他の２つのトランザクションを承認しなくてはならない<ref name="Tangle" />。
+IOTAの[[トランザクション]]はP2Pネットワークの参加者が共有するタングル上で、仲介者なしにユーザーが発行する。
+ユーザーがトランザクションを発行するためには、タングル上の他の２つの過去のトランザクションを承認しなくてはならない<ref name="Tangle">{{cite web|url=https://iota.org/IOTA_Whitepaper.pdf|title=The Tangle Whitepaper|year=2018|last=Popov|first=Serguei|language=en|accessdate=2018-05-22}}</ref>。
 送信されたトランザクションが、受け手から'''確定'''したと認められるためには、十分なレベルの承認を集めなくてはならない（つまり、他のユーザーたちから、十分な回数の承認を受けなくてはならない）<ref name="Consensus">{{cite web |url=https://github.com/noneymous/iota-consensus-presentation |title=IOTA Transactions, Confirmation and Consensus |year=2018 |last=noneymous |language=en |accessdate=2019-03-30|rel=harv}}</ref>。
 このシステムは、中央格納[[データベース]]や単一の管理者を置かずに運用され、一般的な分散型台帳技術に固有の[[スケーラビリティ]]や取引手数料の問題に取り組んでいる<ref name="Forbes">{{cite web |url=https://www.forbes.com/sites/rogeraitken/2017/06/15/iotas-bitfinex-listing-surges-to-1-5b-record-breaking-crypto-capitalization-on-market-debut/#533e23f175a5 |title=IOTA's Bitfinex Listing Surges To $1.5B Record-Breaking 'Crypto' Capitalization On Market Debut |year=2017 |last=Aitken |first=Roger |language=en |accessdate=2018-05-22}}</ref>。
 
@@ -60,7 +57,7 @@ IOTAの起源は、2014年に4人が、[[モノのインターネット|IoT]]及
 
 == 設計 ==
 === タングル ===
-IOTAは[[ブロックチェーン]]を用いる代わりに、プロトコルとしてDAGを使っている<ref name="Tangle"/>。
+IOTAは[[ブロックチェーン]]を用いる代わりに、DAGを使って分散型台帳を実装している<ref name="Tangle"/>。
 '''タングル'''と呼ばれているIOTAのDAGプロトコルは、ブロックチェーンプロトコルを一般化したものである（ブロックチェーンはDAGの特殊なケースである）<ref>{{Cite web |url=http://cryptowiki.net/index.php?title=Blockchain-free_cryptocurrencies |title=Blockchain-free cryptocurrencies - CryptoWiki |website=cryptowiki.net |language=en |access-date=2019-03-30}}</ref>。
 タングルは'''ブロック'''も'''チェーン'''もない構造となっているので、予めブロック時間を決めておく必要がなく、ネットワーク上のトランザクション数が増えると、最終的にトランザクションのスピードが速くなる。
 しかし、トランザクションが確定されるまでの時間には、タングルの[[トポロジー]]やネットワーク内のノードの位置など様々な要因も影響する。
