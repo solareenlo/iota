@@ -1,0 +1,9 @@
+[submodule "iotanode_get_info_neighbors"]
+	path = iotanode_get_info_neighbors
+	url = git@github.com:solareenlo/iotanode_get_info_neighbors.git
+[submodule "iota-wp-jp"]
+	path = iota-wp-jp
+	url = git@github.com:solareenlo/iota-wp-jp.git
+[submodule "iota-workshop"]
+	path = iota-workshop
+	url = git@github.com:solareenlo/iota-workshop.git
