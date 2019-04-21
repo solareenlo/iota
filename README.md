@@ -17,6 +17,7 @@ IOTAについて学んでみよう!
 
 ## フルノードエクスプローラー
 - https://github.com/solareenlo/iotanode_get_info_neighbors
+- https://github.com/solareenlo/iotanodeinfo
 
 ## その他開発者が参考になるコミュニティによるリポジトリ
 - https://github.com/iota-community
