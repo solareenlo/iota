@@ -7,3 +7,7 @@
 [submodule "iota-workshop"]
 	path = iota-workshop
 	url = git@github.com:solareenlo/iota-workshop.git
+[submodule "iotanodeinfo"]
+	path = iotanodeinfo
+	url = git@github.com:solareenlo/iotanodeinfo.git
+	branch = master
